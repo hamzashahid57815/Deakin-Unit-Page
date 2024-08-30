@@ -5,7 +5,8 @@ pipeline {
         DIRECTORY_PATH = "/Users/hamza/Desktop/Git/Deakin-Unit-Page "
         TESTING_ENVIRONMENT = "nextjs-app-testing-environment"
         PRODUCTION_ENVIRONMENT = "Hamza_Shahid_nextjs-app-production-environment"
-        JENKINS_LOG_PATH = "C:\\ProgramData\\Jenkins\\.jenkins\\jobs\\Github-Jenkins-pipeline\\builds\\21\\log"
+        JENKINS_LOG_PATH = "/Users/hamza/.jenkins/jobs/GitHub-Pipeline-Job/builds/2/log
+"
     }
 
     stages {
@@ -61,13 +62,13 @@ pipeline {
         success {
             emailext body: 'Pipeline succeeded. All stages completed.',
                     subject: 'Pipeline status: Successful',
-                    to: 'shetyeketan18@gmail.com',
+                    to: 'hamza.shahid57815@gmail.com',
                     attachmentsPattern: '**/*.log'
         }
         failure {
             emailext body: 'Pipeline failed. Check logs for details',
                     subject: 'Pipeline status: Failure',
-                    to: 'shetyeketan18@gmail.com',
+                    to: 'hamza.shahid57815@gmail.com',
                     attachmentsPattern: '**/*.log'
         }
     }

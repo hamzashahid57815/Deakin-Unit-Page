@@ -2,11 +2,10 @@ pipeline {
     agent any
 
     environment {
-        DIRECTORY_PATH = "/Users/hamza/Desktop/Git/Deakin-Unit-Page "
+        DIRECTORY_PATH = "/Users/hamza/Desktop/Git/Deakin-Unit-Page"
         TESTING_ENVIRONMENT = "nextjs-app-testing-environment"
         PRODUCTION_ENVIRONMENT = "Hamza_Shahid_nextjs-app-production-environment"
-        JENKINS_LOG_PATH = "/Users/hamza/.jenkins/jobs/GitHub-Pipeline-Job/builds/2/log
-"
+        JENKINS_LOG_PATH = "/Users/hamza/.jenkins/jobs/GitHub-Pipeline-Job/builds/2/log"
     }
 
     stages {
